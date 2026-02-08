@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#667eea"/>
+  
+  <!-- Sheep body (fluffy cloud shape) -->
+  <ellipse cx="50" cy="55" rx="28" ry="24" fill="white"/>
+  
+  <!-- Sheep head -->
+  <circle cx="50" cy="38" r="16" fill="white"/>
+  
+  <!-- Left ear -->
+  <ellipse cx="40" cy="30" rx="5" ry="8" fill="#f0f0f0"/>
+  
+  <!-- Right ear -->
+  <ellipse cx="60" cy="30" rx="5" ry="8" fill="#f0f0f0"/>
+  
+  <!-- Face (lighter area) -->
+  <ellipse cx="50" cy="40" rx="10" ry="12" fill="#f8f8f8"/>
+  
+  <!-- Left eye -->
+  <circle cx="45" cy="38" r="2.5" fill="#333"/>
+  
+  <!-- Right eye -->
+  <circle cx="55" cy="38" r="2.5" fill="#333"/>
+  
+  <!-- Nose -->
+  <ellipse cx="50" cy="44" rx="2" ry="1.5" fill="#ffb6c1"/>
+  
+  <!-- Smile -->
+  <path d="M 46 46 Q 50 48 54 46" stroke="#333" stroke-width="1" fill="none" stroke-linecap="round"/>
+  
+  <!-- Legs -->
+  <rect x="38" y="72" width="4" height="10" rx="2" fill="#333"/>
+  <rect x="48" y="72" width="4" height="10" rx="2" fill="#333"/>
+  <rect x="58" y="72" width="4" height="10" rx="2" fill="#333"/>
+  
+  <!-- Glowing collar (small hint) -->
+  <ellipse cx="50" cy="52" rx="12" ry="3" fill="#764ba2" opacity="0.6"/>
+  <ellipse cx="50" cy="52" rx="8" ry="2" fill="#a78bfa" opacity="0.8"/>
+</svg>
