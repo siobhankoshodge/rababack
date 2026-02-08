@@ -6,6 +6,9 @@
     <title>🐑 Ra Ba Back in Time</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,7 +17,7 @@
         }
 
         body {
-            font-family: 'Georgia', serif;
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -39,24 +42,43 @@
         }
 
         h1 {
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: #764ba2;
             text-align: center;
             margin-bottom: 10px;
             font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        .game-logo {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px;
         }
 
         .chapter-title {
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: #667eea;
             text-align: center;
             margin-bottom: 20px;
             font-style: italic;
+            font-size: 1.3em;
+            font-weight: 600;
         }
 
         .story-text {
-            line-height: 1.8;
+            line-height: 1.5;
             color: #333;
             margin-bottom: 30px;
             font-size: 1.1em;
+        }
+        
+        .story-text br + br {
+            display: block;
+            content: "";
+            margin-top: 8px;
         }
 
         .choices {
@@ -72,6 +94,8 @@
             padding: 15px 25px;
             border-radius: 10px;
             font-size: 1.1em;
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             text-align: left;
@@ -100,13 +124,18 @@
             border-radius: 20px;
             display: inline-block;
             margin-bottom: 20px;
-            font-weight: bold;
+            font-weight: 700;
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
         .scene-emoji {
             font-size: 4em;
             text-align: center;
             margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 12px;
         }
 
         .scene-image {
@@ -142,7 +171,8 @@
             font-size: 0.9em;
             text-align: center;
             padding: 20px;
-            font-weight: bold;
+            font-weight: 600;
+            font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
         .image-placeholder-icon {
@@ -162,7 +192,7 @@
 </head>
 <body>
     <div class="game-container">
-        <h1>🐑 Ra Ba Back in Time</h1>
+        <img src="logo.png" alt="Ra Ba Back in Time" class="game-logo">
         <div id="game-content"></div>
     </div>
 
@@ -335,7 +365,7 @@
                 html += '<div class="ending-badge">🏆 THE END 🏆</div>';
             }
 
-            html += `<div class="story-text">${scene.text.replace(/\n/g, '<br><br>')}</div>`;
+            html += `<div class="story-text">${scene.text.replace(/\n/g, '<br>')}</div>`;
 
             if (scene.choices) {
                 html += '<div class="choices">';
